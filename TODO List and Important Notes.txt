@@ -1,0 +1,16 @@
+TODO List and Important Notes
+
+https://pensketransport.service-now.com/login.do
+https://pensketransporttest.service-now.com/login.do
+https://pensketransportdev.service-now.com/login.do
+
+
+
+How to build the new cat items
+How to relate them to the hw models
+Loading the hw models
+Publishing them to Hardware catalog
+OLAs
+Approval flow
+Vendors
+REQ/RITM/sctask - stage / state mapping . what happens if someone close- skips a task or closes incomplete a task.

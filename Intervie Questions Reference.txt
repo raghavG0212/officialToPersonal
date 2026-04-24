@@ -1,0 +1,174 @@
+1) Life cycle of  Problem Incident Change knowledge
+
+----------------------------------------------
+
+2) How to restrict user from entering more characters om field in the form
+>>> Field Dictionary max len.. check dictionary of short_description
+
+
+------------------------------------
+2) How to make flows synchronous?
+
+In ServiceNow, flows created using Flow Designer are asynchronous by default. That means they run in the background and don’t wait for completion before moving forward.
+If you want to make a flow behave synchronously (wait until it finishes), you have a few options depending on your use case:
+
+Use Subflow with “Run in foreground”
+
+---------------------------------
+
+3) UI Policy and client Script who will execute first
+
+Explain -- and who will run first ?
+
+Client Script vs UI Policy – Execution Order
+
+👉 Client Script runs first
+👉 UI Policy runs after and overrides
+
+----------------------------
+
+4) What is taxonomy?
+
+Taxonomy simply means a structured way of classifying and organizing things into categories so they are easier to find, manage, and understand.
+Taxonomy is used to organize:
+•	Services 
+•	Catalog items 
+•	Knowledge articles 
+•	Categories & subcategories
+-------------------------------------------------
+
+5) In ServiceNow, restricting users from entering past (old) dates is a common requirement. You can achieve this in multiple ways depending on where the field is used.
+
+There can be multiple ways
+1) Using ONsubmit client script 
+ Check date selected and current date if selected date is older than current .. display error message..
+
+•	Stops user from submitting form with past date 
+•	Shows error message 
+
+2) Dictionary Attribute (Quick Restriction for Date Fields)
+For date/time fields, you can use:
+
+ Attribute:
+
+min_date=today
+
+•	Prevents selecting past dates from calendar picker 
+•	Simple and effective 
+
+3) Business Rule (Server-side validation – Important)
+Before BR
+Always add server-side validation to ensure data integrity.
+-------------------------------------------------------------
+
+6)  SLA
+
+Types of SLA
+
+1) Standard SLA
+     •	Attached to records like Incident, Problem, Case 
+Tracks: 
+o	Response time 
+o	Resolution time 
+Uses Task SLA table 
+ 
+2) OLA - 
+Operational Level Agreement)
+Internal agreement between support teams.
+Features:
+•	Not customer-facing 
+•	Ensures internal teams meet SLA targets 
+Example:
+•	L2 team must resolve within 2 hours so overall SLA is met 
+
+3) UC - Underpinning contract
+
+Agreement with external vendors/suppliers.
+Features:
+•	Supports SLA fulfillment 
+•	Used when third-party services are involved 
+Example:
+•	Network vendor must fix outage within 1 hour 
+
+
+---------------------------------------------------------------------------
+
+Glide Record classes
+
+------------------------
+
+3) Catalog item - variable on it not visible Why?
+
+May be because of
+
+UI Policy hiding the variable
+Catalog Client Script hiding the field
+Variable visible only to specific roles
+
+------------------------------------------------------------
+
+Diff asych and synch in servicenow -
+
+Explain
+Synchronous (Sync)
+
+👉 Execution happens immediately and sequentially
+👉 System waits until the process completes
+
+Asynchronous (Async)
+
+👉 Execution happens in background
+👉 System does NOT wait for completion
+
+-----------------------------------------------------------------
+
+What is Glide Ajax ?
+
+In ServiceNow, GlideAjax is used to call server-side code (Script Include) from client-side scripts.
+
+
+👉 GlideAjax = Client → Server communication mechanism
+
+It allows a Client Script to:
+
+Fetch data from server
+Execute server logic
+Return result without reloading the form
+
+
+-----------------------------------------
+Types of Client Scripts
+
+“The main types of Client Scripts in ServiceNow are onLoad, onChange, onSubmit, and onCellEdit, each triggered at different stages of form interaction to control UI behavior and validation.”
+
+Should be able to explain further
+-------------------------------------------
+
+Types of Business Rules
+
+👉 “Business Rules in ServiceNow are of four types: Before, After, Async, and Display, based on when they execute during the record lifecycle.”
+
+Should be able to explain further
+---------------
+
+In ServiceNow, if a Catalog Item does not have a Category defined, it typically will NOT be displayed (especially in Service Portal).
+
+🔹 Why does this happen?
+👉 1. Service Catalog is Category-driven
+The Service Catalog UI (especially Service Portal) displays items based on:
+Categories
+Catalog → Category → Items hierarchy
+
+👉 If no category is assigned:
+
+The system doesn’t know where to place the item
+So it doesn’t render it in the catalog navigation
+
+
+👉 “If a catalog has no categories, catalog items won’t be visible in Service Portal browsing because the UI and widgets are category-driven and require categories to display items.”
+
+
+If catalog has no categories
+👉 “Yes, the catalog will be visible, but without categories it will appear empty because Service Portal displays items through categories.”
+-----------------------------
+

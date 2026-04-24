@@ -1,0 +1,154 @@
+Agile Methodology
+
+
+Agile Methodology is a way to manage projects by breaking them into smaller parts. 
+It focuses on working together and making constant improvements. Teams plan, work on the project, and then review in a repeating cycle.
+
+It focuses on delivering smaller pieces of work regularly instead of one big launch.
+This allows teams to adapt to changes quickly and provide customer value faster.
+Major companies like Facebook, Google, and Amazon use Agile because of its adaptability and customer-focused approach.
+Prioritize flexibility, collaboration, and customer satisfaction.
+In the traditional waterfall model, we first get all client requirements and do not allow changes during the project
+
+Agile Development Stages
+1. Requirement Gathering
+2. Design
+3. Development (Coding)
+4. Testing
+5. Deployment
+6. Review (Maintenance)
+
+Types of Agile Methodologies
+Kanban
+Scrum
+
+Applications of the Agile Methodology?
+
+Unclear or Changing Requirements: Agile is great for projects with requirements that aren't well-defined or might change.
+Complex Projects: It's good for big, complex projects by breaking them into smaller pieces.
+Customer Focus: Use Agile when making customers happy is a priority and you want to involve them throughout.
+Quick Time-to-Market: If you need to get your product out fast, Agile can help.
+Small to Medium Teams: Agile works well for teams of a few to a few dozen people.
+Collaboration: Agile promotes working together and open communication.
+Regular Updates: If you want to check progress often and make changes as needed.
+Continuous Improvement: Agile fosters a culture of always getting better over time.
+
+
+-----------------------------------------------------------------------------------------------
+
+Declarative actions
+
+Declarative Actions are an upgrade to UI Actions.
+
+Declarative actions add custom functionality to your Workspace forms, fields, lists, and related lists without writing custom scripts or learning APIs. Declarative actions include: form and list actions, related list actions, and field decorators.
+
+But things are changing. There are many new Next Experience-based UIs like Workspaces, Playbooks, and Catalog Wizards. Plus, users can build their own custom Next Experience-based UIs. UI Actions don’t work well with these new types of UIs because they’re so heavily based around the concept of lists and forms.
+
+
+That’s where Declarative Actions come in. They’re more flexible and work with any style of UI, whether it be a list, or a form, or a playbook, or a catalog wizard. They are the future of performing actions in ServiceNow.
+
+There are three different ways a DA can be implemented in Next Experience-based interfaces:
+
+Client Script – to execute a UI Action-style script on the client-side.
+Server Script – to execute a UI Action-style script on the server-side.
+UXF Client Action – to dispatch an action in a Next Experience-based UI for handling by an event handler in UI Builder.
+
+Exercise - Add a Declarative action on the list view of the incident table. and check it from the Service Operations Workspace incident list
+
+--------------------------------------------
+
+
+Disadvantages of Flow designer
+
+Disadvantages of Flow Designer
+
+There will always be a delay between the actual trigger and the start of the flow. 
+
+Flow Designer is excellent for low-code automation but has limitations in performance, debugging, and handling complex logic compared to scripting approaches like Business Rules or Script Includes.
+
+
+1. Performance Overhead
+2. Limited Debugging Capabilities
+3. Less Flexibility Compared to Scripting
+4. Version Control Challenges
+5. Governance & Sprawl Issues
+6. Execution Context Limitations
+
+
+1. Performance Overhead
+Flows can be slower than Business Rules or Scripts
+Each action runs as a separate transaction in some cases
+Not ideal for high-volume or real-time processing
+
+👉 Example: Bulk record updates are faster with Background Scripts or Fix Scripts.
+
+🔻 2. Limited Debugging Capabilities
+Debugging is not as powerful as scripting tools
+Hard to trace complex logic across multiple subflows/actions
+Execution details are sometimes not granular enough
+
+🔻 3. Less Flexibility Compared to Scripting
+Complex logic (loops, conditions, transformations) can become messy
+Advanced developers often prefer:
+Script Includes
+Business Rules
+
+👉 Flow Designer is low-code, but not always pro-code friendly
+
+🔻 4. Version Control Challenges
+Limited native support for:
+Branching
+Merging
+Difficult to manage in team environments compared to code-based development
+
+🔻 5. Governance & Sprawl Issues
+Easy to create flows → leads to:
+Too many flows
+Duplicate logic
+Poor maintainability
+
+👉 Without governance, system becomes hard to manage
+
+🔻 6. Execution Context Limitations
+Runs in a specific context (system/user)
+Sometimes lacks flexibility in:
+impersonation
+fine-grained control
+
+-----------------------------------------------
+
+Questions from Sravya and Kusum
+
+What is Service catalog?
+
+What are declarative actions?
+
+SLA Response and Resolutions  -- 
+
+Readonly can you change values by using client scripts -- Yes
+
+Scripting
+
+Script include - 
+GlideAjax - 
+Client callable Script includes
+
+---------------------
+
+Catalog 
+Catalog items
+Client scripts
+
+-----------
+ITSM
+
+Disadvantages of Flow designer
+
+Types of Tables
+
+
+UI Policy - Can you change field values using  -- yes
+
+What configuration you changed on ServiceNow?  
+
+Agile methodology - 
